@@ -6930,6 +6930,7 @@ def test_stream_mode_messages_command() -> None:
         (
             _AnyIdHumanMessage(content="foo"),
             {
+                "ls_integration": "langgraph",
                 "langgraph_step": 1,
                 "langgraph_node": "my_node",
                 "langgraph_triggers": ("branch:to:my_node",),
@@ -6940,6 +6941,7 @@ def test_stream_mode_messages_command() -> None:
         (
             _AnyIdHumanMessage(content="bar"),
             {
+                "ls_integration": "langgraph",
                 "langgraph_step": 2,
                 "langgraph_node": "my_other_node",
                 "langgraph_triggers": ("branch:to:my_other_node",),
@@ -6950,6 +6952,7 @@ def test_stream_mode_messages_command() -> None:
         (
             _AnyIdHumanMessage(content="baz"),
             {
+                "ls_integration": "langgraph",
                 "langgraph_step": 3,
                 "langgraph_node": "my_last_node",
                 "langgraph_triggers": ("branch:to:my_last_node",),

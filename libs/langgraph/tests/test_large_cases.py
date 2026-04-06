@@ -1409,6 +1409,7 @@ def test_prebuilt_tool_chat(snapshot: SnapshotAssertion) -> None:
                 tool_call_id="tool_call123",
             ),
             {
+                "ls_integration": "langgraph",
                 "langgraph_step": 2,
                 "langgraph_node": "tools",
                 "langgraph_triggers": (PUSH,),
@@ -1474,6 +1475,7 @@ def test_prebuilt_tool_chat(snapshot: SnapshotAssertion) -> None:
                 tool_call_id="tool_call234",
             ),
             {
+                "ls_integration": "langgraph",
                 "langgraph_step": 4,
                 "langgraph_node": "tools",
                 "langgraph_triggers": (PUSH,),
@@ -1488,6 +1490,7 @@ def test_prebuilt_tool_chat(snapshot: SnapshotAssertion) -> None:
                 tool_call_id="tool_call567",
             ),
             {
+                "ls_integration": "langgraph",
                 "langgraph_step": 4,
                 "langgraph_node": "tools",
                 "langgraph_triggers": (PUSH,),
